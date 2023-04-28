@@ -7,7 +7,9 @@ public class testJavaChoix {
 		int a = 0, b = 0;
 
 		if (a == b) {
+			a = b;
 		} else {
+			a = b;
 		}
 		;
 	}
