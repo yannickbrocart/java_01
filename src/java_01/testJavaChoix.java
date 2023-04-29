@@ -4,7 +4,7 @@ public class testJavaChoix {
 
 	public static void main(String[] args) {
 
-		int a = 0, b = 0;
+		int a = 0, b = 5;
 
 		if (a == b) {
 			a = b;
