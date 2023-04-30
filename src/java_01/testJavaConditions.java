@@ -1,20 +1,25 @@
 package java_01;
 
+import java.util.Scanner;
+
 public class testJavaConditions {
 
 	public static void main(String[] args) {
 
-		int a = 0, b = 5, c = 2, d = 10;
-		char lettre_1 = 'c', lettre_2 = 'b';
+		int a, b, plusGrand;
+		Scanner lectureClavier = new Scanner(System.in);
 
-		if (a != b) {
-			System.out.println("a est différent de b");
-			if (a != c) {
-				System.out.println("a est différent de c");
-			}
-		} else
-			System.out.println("a est égal à b");
-		if (lettre_1 >= lettre_2 || lettre_1 == lettre_2 && !(lettre_1 <= lettre_2))
-			System.out.println(lettre_1 + " n'est pas plus petit que " + lettre_2);
+		System.out.println("Entrez une première valeur");
+		a = lectureClavier.nextInt();
+		System.out.println("Entrez une seconde valeur");
+		b = lectureClavier.nextInt();
+
+		if (a > b)
+			plusGrand = a;
+		else
+			plusGrand = b;
+
+		System.out.println("la plus grande valeur est " + plusGrand);
+
 	}
 }
