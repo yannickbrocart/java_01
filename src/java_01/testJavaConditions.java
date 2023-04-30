@@ -19,7 +19,7 @@ public class testJavaConditions {
 		else
 			plusGrand = b;
 
-		System.out.println("la plus grande valeur est " + plusGrand);
+		System.out.println("Le plus grand chiffre est " + plusGrand);
 
 	}
 }
