@@ -7,12 +7,12 @@ public class testJavaConditions {
 	public static void main(String[] args) {
 
 		int a, b, plusGrand;
-		Scanner lectureClavier = new Scanner(System.in);
-
-		System.out.println("Entrez une première valeur");
-		a = lectureClavier.nextInt();
-		System.out.println("Entrez une seconde valeur");
-		b = lectureClavier.nextInt();
+		try (Scanner lectureClavier = new Scanner(System.in)) {
+			System.out.println("Entrez une première valeur");
+			a = lectureClavier.nextInt();
+			System.out.println("Entrez une seconde valeur");
+			b = lectureClavier.nextInt();
+		}
 
 		if (a > b)
 			plusGrand = a;
