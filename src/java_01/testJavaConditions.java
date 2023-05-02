@@ -21,5 +21,16 @@ public class testJavaConditions {
 
 		System.out.println("Le plus grand chiffre est " + plusGrand);
 
+		switch (a) {
+		case 10:
+			System.out.println(a + " est 10");
+			break;
+		case 20:
+			System.out.println(a + " est 20");
+			break;
+		default:
+			System.out.println(a + " est différent de 10 ou 20");
+		}
+
 	}
 }
