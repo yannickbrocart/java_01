@@ -46,9 +46,23 @@ public class testJavaObjets {
 		System.out.println("");
 
 		System.out.println("Le cercle A à pour coordonnées x = " + H1.getPosX() + " et y =" + H1.getPosY()
-				+ " et pour rayon " + H1.getRayon());
+				+ ", pour rayon " + H1.getRayon() + " et comme couleur " + H1.getColor());
 		System.out.println("Le cercle B à pour coordonnées x = " + H2.getPosX() + " et y =" + H2.getPosY()
-				+ " et pour rayon " + H2.getRayon());
+				+ ", pour rayon " + H2.getRayon() + " et comme couleur " + H2.getColor());
+		H2.setColor("red");
+		System.out.println("Le cercle B à pour coordonnées x = " + H2.getPosX() + " et y =" + H2.getPosY()
+				+ ", pour rayon " + H2.getRayon() + " et comme couleur " + H2.getColor());
+
+		System.out.println("");
+		System.out.println("Interfaçage : ");
+		System.out.println("");
+
+		H2.reductionDeTaille(2);
+		H2.deplacementHorizontal(50);
+		H2.deplacementVertical(-25);
+		H2.reductionDeTaille(H2.augmentationTaille());
+		System.out.println("Le cercle B à pour coordonnées x = " + H2.getPosX() + " et y =" + H2.getPosY()
+				+ ", pour rayon " + H2.getRayon() + " et comme couleur " + H2.getColor());
 
 	}
 

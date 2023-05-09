@@ -1,19 +1,49 @@
 package java_01;
 
-public class testJavaHeritage extends testJavaClasseA {
+public class testJavaHeritage extends testJavaClasseA implements testJavaInterface {
 
-	private String col;
+	protected String color;
 
 	public testJavaHeritage() {
-		super;
-		col = "green";
+		super();
+		color = "green";
 	}
 
-	public testJavaHeritage(int posX, int posY, int rayon, String col) {
-		this.posX = posX;
-		this.posY = posY;
+	public testJavaHeritage(int posX, int posY, int rayon, String color) {
+		super(posX, posY);
 		this.rayon = rayon;
-		this.col = col;
+		this.color = color;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	@Override
+	public void reductionDeTaille(int div) {
+		this.rayon /= div;
+
+	}
+
+	@Override
+	public void deplacementVertical(int dep) {
+		this.posX += dep;
+
+	}
+
+	@Override
+	public void deplacementHorizontal(int dep) {
+		this.posY += dep;
+
+	}
+
+	@Override
+	public int augmentationTaille() {
+		return 6;
 	}
 
 }

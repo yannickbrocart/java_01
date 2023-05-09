@@ -2,9 +2,9 @@ package java_01;
 
 public class testJavaClasseA {
 
-	private int posX, posY;
+	protected int posX, posY;
 	public static final int RayonDeBase = 15;
-	private int rayon = RayonDeBase;
+	protected int rayon = RayonDeBase;
 	static int compteur = 0;
 
 	public testJavaClasseA() {
@@ -53,4 +53,5 @@ public class testJavaClasseA {
 		objet2.setRayon(this.getRayon());
 		this.setRayon(tmpRayon);
 	}
+
 }
