@@ -19,4 +19,24 @@ public class TestJavaCursus {
 			e.afficheUnEtudiant();
 		}
 	}
+
+	public void classeLesEtudiantsParMoyenne() {
+		int indexDuPlusPetit = 0;
+		TestJavaEtudiant etudiantTmp;
+		for (int index = 0; index < liste.length; index++) {
+			indexDuPlusPetit = ouEstLePlusPetit(index);
+			etudiantTmp = liste[index];
+			liste[index] = liste[indexDuPlusPetit];
+			liste[indexDuPlusPetit] = etudiantTmp;
+		}
+	}
+
+	private int ouEstLePlusPetit(int debut) {
+		int lePlusPetit = debut;
+		for (int index = debut + 1; index < liste.length; index++) {
+			if (liste[index].quelleMoyenne() < liste[lePlusPetit].quelleMoyenne())
+				lePlusPetit = index;
+		}
+		return lePlusPetit;
+	}
 }
