@@ -1,19 +1,19 @@
 package java_01;
 
-public class testJavaClasseA {
+public class TestJavaClasseA {
 
 	protected int posX, posY;
 	public static final int RayonDeBase = 15;
 	protected int rayon = RayonDeBase;
 	static int compteur = 0;
 
-	public testJavaClasseA() {
+	public TestJavaClasseA() {
 		posX = 50;
 		posY = 50;
 		rayon = RayonDeBase;
 	}
 
-	public testJavaClasseA(int posX, int posY) {
+	public TestJavaClasseA(int posX, int posY) {
 		this.posX = posX;
 		this.posY = posY;
 		rayon = RayonDeBase;
@@ -48,7 +48,7 @@ public class testJavaClasseA {
 		return compteur;
 	}
 
-	public void inverserRayons(testJavaClasseA objet2) {
+	public void inverserRayons(TestJavaClasseA objet2) {
 		int tmpRayon = objet2.getRayon();
 		objet2.setRayon(this.getRayon());
 		this.setRayon(tmpRayon);

@@ -2,7 +2,7 @@ package java_01;
 
 import java.util.Scanner;
 
-public class testJavaConditions {
+public class TestJavaConditions {
 
 	public static void main(String[] args) {
 

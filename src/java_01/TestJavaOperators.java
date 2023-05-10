@@ -1,6 +1,6 @@
 package java_01;
 
-public class testJavaOperators {
+public class TestJavaOperators {
 
 	public static void main(String[] args) {
 

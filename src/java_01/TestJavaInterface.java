@@ -1,6 +1,6 @@
 package java_01;
 
-public interface testJavaInterface {
+public interface TestJavaInterface {
 	final int AUG = 3;
 
 	public void reductionDeTaille(int div);

@@ -2,12 +2,12 @@ package java_01;
 
 import java.util.Scanner;
 
-public class testJavaClasses {
+public class TestJavaClasses {
 
 	public static void main(String[] args) {
 
 		Scanner lectureClavier = new Scanner(System.in);
-		testJavaClasseA A = new testJavaClasseA();
+		TestJavaClasseA A = new TestJavaClasseA();
 
 		System.out.println("La position du cercle est : x = " + A.getPosX() + ", y = " + A.getPosY() + ".");
 		System.out.println("Le nombre de modification de la position du cercle est " + A.getCompteur() + ".");

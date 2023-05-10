@@ -2,15 +2,15 @@ package java_01;
 
 import java.util.Scanner;
 
-public class testJavaObjets {
+public class TestJavaObjets {
 
 	public static void main(String[] args) {
 
 		Scanner lectureClavier = new Scanner(System.in);
-		testJavaClasseA A = new testJavaClasseA();
-		testJavaClasseA B = new testJavaClasseA(49, 49);
-		testJavaHeritage H1 = new testJavaHeritage();
-		testJavaHeritage H2 = new testJavaHeritage(37, 37, 12, "blue");
+		TestJavaClasseA A = new TestJavaClasseA();
+		TestJavaClasseA B = new TestJavaClasseA(49, 49);
+		TestJavaHeritage H1 = new TestJavaHeritage();
+		TestJavaHeritage H2 = new TestJavaHeritage(37, 37, 12, "blue");
 
 		System.out.println("Le cercle A à pour coordonnées x = " + A.getPosX() + " et y =" + A.getPosY()
 				+ " et pour rayon " + A.getRayon());

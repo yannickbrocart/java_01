@@ -1,6 +1,6 @@
 package java_01;
 
-public class testJavaVariables {
+public class TestJavaVariables {
 
 	public static void main(String[] args) {
 

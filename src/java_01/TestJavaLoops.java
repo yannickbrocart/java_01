@@ -2,7 +2,7 @@ package java_01;
 
 import java.io.IOException;
 
-public class testJavaLoops {
+public class TestJavaLoops {
 
 	public static void main(String[] args) throws IOException {
 

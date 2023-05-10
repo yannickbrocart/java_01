@@ -2,7 +2,7 @@ package java_01;
 
 import java.util.Scanner;
 
-public class testJavaFonctions {
+public class TestJavaFonctions {
 
 	static int valeurR;
 	static double valeurP;

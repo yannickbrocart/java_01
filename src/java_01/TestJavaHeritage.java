@@ -1,15 +1,15 @@
 package java_01;
 
-public class testJavaHeritage extends testJavaClasseA implements testJavaInterface {
+public class TestJavaHeritage extends TestJavaClasseA implements TestJavaInterface {
 
 	protected String color;
 
-	public testJavaHeritage() {
+	public TestJavaHeritage() {
 		super();
 		color = "green";
 	}
 
-	public testJavaHeritage(int posX, int posY, int rayon, String color) {
+	public TestJavaHeritage(int posX, int posY, int rayon, String color) {
 		super(posX, posY);
 		this.rayon = rayon;
 		this.color = color;

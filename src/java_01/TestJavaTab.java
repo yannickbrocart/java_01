@@ -2,7 +2,7 @@ package java_01;
 
 import java.util.Scanner;
 
-public class testJavaTab {
+public class TestJavaTab {
 
 	public static void main(String[] args) {
 		String[] monTableau = new String[5];
