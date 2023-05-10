@@ -11,9 +11,9 @@ public class TestJavaEtudiant {
 	Scanner lectureClavier = new Scanner(System.in);
 
 	public TestJavaEtudiant() {
-		System.out.print("Entrez un nom : ");
+		System.out.println("Entrez un nom : ");
 		nom = lectureClavier.next();
-		System.out.print("Entrez un prénom : ");
+		System.out.println("Entrez un prénom : ");
 		prenom = lectureClavier.next();
 		System.out.println("Combien de notes ? ");
 
@@ -23,25 +23,23 @@ public class TestJavaEtudiant {
 			System.out.println("Entrez la note n° " + (i + 1) + " : ");
 			notes[i] = lectureClavier.nextDouble();
 		}
-
 		moyenne = calculMoyenne();
-		afficheEtudiant();
 	}
 
-	public double calculMoyenne() {
+	private double calculMoyenne() {
 		double resultat = 0.0;
 		for (double i : notes)
 			resultat += i;
 		return resultat / nbrNotes;
 	}
 
-	public void afficheEtudiant() {
+	public void afficheUnEtudiant() {
 		System.out.println("L'étudiant se nomme " + nom + " " + prenom + ".");
 		System.out.print("Ses notes sont ");
 		for (double i : notes) {
 			System.out.print(i + ", ");
 		}
-		System.out.print("et sa moyenne est de " + moyenne);
+		System.out.println("et sa moyenne est de " + moyenne);
 	}
 
 	public double quelleMoyenne() {

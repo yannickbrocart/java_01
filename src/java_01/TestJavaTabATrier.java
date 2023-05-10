@@ -5,5 +5,6 @@ public class TestJavaTabATrier {
 	public static void main(String[] args) {
 
 		TestJavaCursus cursus = new TestJavaCursus();
+		cursus.afficheLesEtudiants();
 	}
 }

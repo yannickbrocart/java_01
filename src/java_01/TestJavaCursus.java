@@ -10,13 +10,13 @@ public class TestJavaCursus {
 		System.out.println("Combien d'étudiants ? ");
 		int nbrEtudiants = lectureClavier.nextInt();
 		liste = new TestJavaEtudiant[nbrEtudiants];
-		for (TestJavaEtudiant etudiant : liste) {
-			etudiant = new TestJavaEtudiant();
-		}
+		for (int etudiant = 0; etudiant < liste.length; etudiant++)
+			liste[etudiant] = new TestJavaEtudiant();
 	}
 
-	public void afficheTabDeClasseATrier() {
-		for (TestJavaEtudiant etudiant : liste)
-			etudiant.afficheEtudiant();
+	public void afficheLesEtudiants() {
+		for (TestJavaEtudiant e : liste) {
+			e.afficheUnEtudiant();
+		}
 	}
 }
