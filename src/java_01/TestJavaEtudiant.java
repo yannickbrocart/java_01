@@ -42,6 +42,10 @@ public class TestJavaEtudiant {
 		System.out.println("et sa moyenne est de " + moyenne);
 	}
 
+	public String toString() {
+		return "L'étudiant se nomme " + nom + " " + prenom + " et sa moyenne est de " + moyenne;
+	}
+
 	public double quelleMoyenne() {
 		return moyenne;
 	}
